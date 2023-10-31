@@ -1,0 +1,26 @@
+@mixin titulo-grande ($fuente-primaria, $fontsize-titulo, $color) {
+    font-family: $fuente-primaria;
+    font-size: $fontsize-titulo-g;
+    color: $color;
+}
+
+@mixin titulo-mediano ($fuente-primaria, $fontsize-titulo, $color) {
+    font-family: $fuente-primaria;
+    font-size: $fontsize-titulo-m;
+    color: $color;
+}
+
+@mixin texto ($fuente-secundaria, $fontsize-texto, $color) {
+    font-family: $fuente-secundaria;
+    font-size: $fontsize-texto;
+    color: $color;
+}
+
+@mixin flex ($direction, $justify, $align, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+

@@ -1,0 +1,100 @@
+.descrubri {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    h1 {
+        @include titulo-mediano ($fuente-primaria, $fontsize-titulo-m, $color);
+    }
+    p {
+        @include texto ($fuente-secundaria, $fontsize-texto, $color);
+    }
+    p, h2 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.consultorio {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 100px;
+    margin-left: 950px;
+    margin-right: 150px;
+    h2 {
+        @include titulo-mediano ($fuente-primaria, $fontsize-titulo-m, $color);
+    }
+    p {
+        @include texto ($fuente-secundaria, $fontsize-texto, $color);
+    }
+     p, h2 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .mapa {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+
+
+.zoom {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    h2 {
+        @include titulo-mediano ($fuente-primaria, $fontsize-titulo-m, $color);
+    }
+    p {
+        @include texto ($fuente-secundaria, $fontsize-texto, $color);
+    }
+    p, h2 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .descrubri {
+            @include flex ($direction, $justify, $align, $wrap);
+            h1 {
+                font-size: large;
+            }
+            p {
+                font-size: medium;
+            }
+        }
+    .consultorio {
+             display: flex;
+             flex-direction: column;
+             text-align: center;
+             align-items: center;
+            h2 {
+                font-size: large;
+            }
+            p {
+                font-size: medium;
+            }
+            .mapa {
+                @include flex ($direction, $justify, $align, $wrap);
+                width: 20rem; 
+                height: 20rem; 
+             } 
+        } 
+    .zoom { 
+            @include flex ($direction, $justify, $align, $wrap); 
+            h2 { 
+                font-size: large;
+            }
+            p {
+                font-size: medium;
+            }
+        }
+}

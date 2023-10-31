@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color;
+    height: 15rem;
+    padding: 1em;
+    margin-top: 10em;
+    text-align: center;
+    
+    
+    .footer-izquierdo {
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: center;
+        
+        .logo-footer { 
+            flex-direction: column;
+            text-decoration: none;
+            justify-content: center;
+            margin-bottom: 1em;
+            
+            img {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+        
+        .iconos {
+            margin-top: 1em;
+            
+            img {
+                width: 3.5em;
+                height: 3.5em;
+            } 
+        }
+        .copy { 
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

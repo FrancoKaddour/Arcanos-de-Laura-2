@@ -1,0 +1,135 @@
+.titulo-tarot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    h1 {
+        @include titulo-grande ($fuente-primaria, $fontsize-titulo-g, $color);
+    }
+    p {
+        @include texto ($fuente-secundaria, $fontsize-texto, $color);
+    }
+    h1 p {
+        margin: 0;
+    }
+}
+    
+
+.contenedor-tarot {
+    display: flex;
+    margin: 100px;
+    .caja-izquierda {
+        width: 50%;
+        margin: 10px;
+        h2 {
+            @include titulo-mediano ($fuente-primaria, $fontsize-titulo-m, $color);
+        }
+        p {
+            @include texto ($fuente-secundaria, $fontsize-texto, $color);
+        }
+    }
+    .caja-derecha {
+        width: 50%;
+        margin: 10px;
+        h2 {
+            @include titulo-mediano ($fuente-primaria, $fontsize-titulo-m, $color);
+        }
+        p {
+            @include texto ($fuente-secundaria, $fontsize-texto, $color);
+        }
+    }
+}
+
+.articulo1 {
+    padding: 20px;
+    text-align: center;
+}
+.articulo2 {
+    padding: 20px;
+    text-align: center;
+}
+.articulo3 {
+    padding: 20px;
+    text-align: center;
+}
+.articulo4 {
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .titulo-tarot {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        h1 {
+            font-size:xx-large;
+        }  
+        p { 
+            font-size: medium;
+        }
+    }
+    .contenedor-tarot {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       h2 {
+           font-size: large;
+       }
+       p {
+           font-size: medium;
+       }
+    }
+    .articulo1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       h2 {
+           font-size: large;
+       }
+       p {
+           font-size: medium;
+       }
+    }
+    .articulo2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       h2 {
+           font-size: large;
+       }
+       p {
+           font-size: medium;
+       }
+    }
+    .articulo3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       h2 {
+           font-size: large;
+       }
+       p {
+           font-size: medium;
+       }
+    }
+    .articulo4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+       h2 {
+           font-size: large;
+       }
+       p {
+           font-size: medium;
+       }
+    }
+} 

@@ -1,0 +1,54 @@
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 130px;
+    margin-left: 150px;
+    margin-right: 150px;
+    h1 {
+        @include titulo-grande ($fuente-primaria, $fontsize-titulo-g, $color);
+        margin-top: 0px;
+    }
+    p {
+        @include texto ($fuente-secundaria, $fontsize-texto, $color);
+    }
+    p, h1 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.contactame-inicio {
+    background-color:$background-color; 
+    color: map-get($colores,color-texto); 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    &hover {
+        background-color: #000000;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        h1 {
+            font-size:xx-large;
+        }  
+        p { 
+            font-size: medium;
+        }
+        }
+    .contactame-inicio {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        }
+}
